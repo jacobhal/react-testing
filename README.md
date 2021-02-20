@@ -1,2 +1,2 @@
 # react-testing
-A repository for the Udemy course "React Testing with Jest and Enzyme".
+A repository for testing React using the React Testing Library, Jest and Enzyme.
