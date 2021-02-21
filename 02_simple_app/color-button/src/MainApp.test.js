@@ -5,6 +5,8 @@ test('button has correct initial color', () => {
   render(<MainApp />);
   // find an element with a role of button and a text of 'Change to blue'
   const button = screen.getByRole('button', { name: /Change to blue/i });
+
+  // expect the background color to be red
   expect(button).toHaveStyle({ backgroundColor: 'red' });
 });
 
