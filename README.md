@@ -1,2 +1,3 @@
-# react-testing
-A repository for testing React using the React Testing Library, Jest and Enzyme.
+# React Testing Library & Jest
+
+A repository for testing React using the React Testing Library.
