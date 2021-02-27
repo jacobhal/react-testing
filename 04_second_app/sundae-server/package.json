@@ -18,6 +18,8 @@
   "dependencies": {
     "core-js": "^3.8.1",
     "cors": "^2.8.4",
+    "eslint-plugin-jest-dom": "^3.6.5",
+    "eslint-plugin-testing-library": "^3.10.1",
     "express": "^4.16.3"
   }
 }
