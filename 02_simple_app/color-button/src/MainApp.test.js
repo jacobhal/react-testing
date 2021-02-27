@@ -22,7 +22,7 @@ test('Button has correct initial text', () => {
 
   // expect the colorButton to be in the DOM with correct text
   expect(colorButton).toBeInTheDocument();
-  expect(colorButton.textContent).toBe('Change to Midnight Blue');
+  expect(colorButton).toHaveTextContent('Change to Midnight Blue');
 });
 
 test('Button turns midnight blue when clicked', () => {
@@ -41,7 +41,7 @@ test('Button turns midnight blue when clicked', () => {
   expect(colorButton).toHaveStyle({ backgroundColor: 'MidnightBlue' });
 
   // expect the colorButton text to be 'Change to red'
-  expect(colorButton.textContent).toBe('Change to Medium Violet Red');
+  expect(colorButton).toHaveTextContent('Change to Medium Violet Red');
 });
 
 test('Initial conditions', () => {
