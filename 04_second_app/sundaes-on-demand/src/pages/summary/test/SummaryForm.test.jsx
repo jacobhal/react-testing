@@ -36,3 +36,9 @@ test('checkbox enables button on first click and disables button on second click
   expect(agreementCheckbox).not.toBeChecked();
   expect(confirmButton).toBeDisabled();
 });
+
+test('popover responds to hover', () => {
+  // popover starts out hidden
+  // popover appears upon mouseover of checkbox label
+  // popover disappears when we mouse out
+});
