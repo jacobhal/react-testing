@@ -1,5 +1,6 @@
-import { render, fireEvent, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import SummaryForm from './../SummaryForm.jsx';
+import userEvent from '@testing-library/user-event';
 
 test('initial conditions', () => {
   render(<SummaryForm />);
@@ -25,12 +26,12 @@ test('checkbox enables button on first click and disables button on second click
     name: /confirm order/i,
   });
 
-  fireEvent.click(agreementCheckbox);
+  userEvent.click(agreementCheckbox);
 
   expect(agreementCheckbox).toBeChecked();
   expect(confirmButton).toBeEnabled();
 
-  fireEvent.click(agreementCheckbox);
+  userEvent.click(agreementCheckbox);
 
   expect(agreementCheckbox).not.toBeChecked();
   expect(confirmButton).toBeDisabled();
