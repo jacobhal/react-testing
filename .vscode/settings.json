@@ -1,7 +1,8 @@
 {
-  "eslint.options": {
-    "configFile": ".eslintrc.json"
-  },
+  "eslint.workingDirectories": [
+    "02_first_app/color-button",
+    "04_second_app/sundaes-on-demand"
+  ],
   "eslint.validate": ["javascript", "javascriptreact"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
