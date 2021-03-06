@@ -47,5 +47,16 @@ test('popover responds to hover', () => {
   expect(nullPopover).not.toBeInTheDocument();
 
   // popover appears upon mouseover of checkbox label
+  const termsAndConditions = screen.getByText(/terms and conditions/i);
+  userEvent.hover(termsAndConditions);
+
+  const popover = screen.getByText(/no icecream will actually be delivered/i);
+  expect(popover).toBeInTheDocument(); // test will fail on previous line if it is not in the DOM but this line is included for readability
+
   // popover disappears when we mouse out
+  userEvent.unhover(termsAndConditions);
+  const nullPopoverAgain = screen.queryByText(
+    /no icecream will actually be delivered/i
+  );
+  expect(nullPopoverAgain).not.toBeInTheDocument();
 });
