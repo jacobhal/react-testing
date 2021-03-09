@@ -38,3 +38,5 @@ Sometimes Testing Library can give an error that looks something like the title 
 The warning suggests that React updated an element after the test was finished. Some async update occurred after the test completed running. You DO NOT want to follow the advice and wrap in _act(...)_.
 
 > In order to fix this error, determine what changes after the test is over (async). Account for the change by awaiting the change and then asserting on it.
+
+> Any time we are deadling with async we need to use _await_ and _findBy_.
